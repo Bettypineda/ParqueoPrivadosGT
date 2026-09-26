@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Habilita el modo oscuro por clase (.dark en <html>) en vez de solo por
+   preferencia del sistema, para poder alternarlo con un boton. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Animacion suave de flotar, usada por el fondo decorativo (pandas/hojas). */
+@keyframes flotar {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--rot, 0deg));
+  }
+  50% {
+    transform: translateY(-16px) rotate(calc(var(--rot, 0deg) + 6deg));
+  }
+}

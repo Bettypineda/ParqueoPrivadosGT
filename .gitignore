@@ -1,0 +1,41 @@
+# Dependencias
+node_modules/
+
+# Backend (NestJS)
+Backend/**/dist/
+Backend/**/build/
+Backend/**/coverage/
+Backend/**/.nyc_output/
+Backend/**/*.tsbuildinfo
+
+# Frontend (Vite)
+FrontEnd/**/dist/
+FrontEnd/**/dist-ssr/
+FrontEnd/**/*.local
+
+# Variables de entorno (credenciales, no se suben)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
